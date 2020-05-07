@@ -6,7 +6,7 @@ RUN apt-get update && apt-get upgrade
 RUN apt-get -y install nginx
 
 # ポートの指定
-EXPOSE 80
+EXPOSE 8010
 
 # Webコンテンツの配置
 ONBUILD ADD website.tar /var/www/html/
